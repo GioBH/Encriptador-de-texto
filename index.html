@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <main >
+        <section class="contenedor__logo">
+            <img class="logo" src="./imagenes/Logo.png" alt="logo alura">
+        </section>
+        <section class="inicioApp">
+              <textarea name="caja__texto" class="caja__texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="inicioApp__alerta">
+                <img src="/imagenes/pngwing.com.png" width="14px" alt="">
+                <p class="alerta"> Solo letras minusculas y sin acento.</p>
+            </div>
+            <div class="inicioApp__btn">
+                <button onclick="btnEncriptar()" class="inicioApp__btn__encriptar">Encriptar</button>
+                <button onclick="btnDesencriptar()" class="inicioApp__btn__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="resultadoApp">            
+                <textarea class="caja__respuesta"></textarea> 
+                <div class="mensajeInformativo" style="display: block;">
+                    <p class="mensajeInformativo__1">Ningún mensaje fue <br>encontrado.</p>
+                    <p class="mensajeInformativo__2">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+                </div>
+                <div class="resultadoApp__btn" >                                   
+                    <button onclick="copiarTxtEncriptado()" class="btnCopiar" style="display: none">Copiar</button> 
+                </div>          
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Giovanny Bolaños</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

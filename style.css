@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --fuente-inter: "Inter", sans-serif;
+    --color-1: #f3f5fc;
+    --color-2: #0A3871;
+    --color-3: #495057;
+    --color-4: white;
+    
+}
+
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-1);
+    font-family: var(--fuente-inter);
+}
+
+.contenedor__logo{
+    width: 8vw;
+    height: 88vh;
+    margin-top: 25px;
+}
+
+.logo{
+    height: 8vh;
+    margin-left: 2%;
+    transition: width 0.3s ease;
+}
+
+main{
+    display: flex;
+    margin: 0px 10px 10px 10px;
+    gap: 50px;
+    width: 98vw;
+    height: 91.5vh;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.inicioApp{
+    width: 92vw;
+    height: 93vh;
+}
+
+.caja__texto{ 
+    border: none;
+    outline: none;
+    background-color: var(--color-1);
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    resize: none;
+    width: 95%;
+    height: 50vh;
+    max-width: 100%;
+    min-width: 30%;
+    font-family: var(--fuente-inter);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-2);
+    text-transform: lowercase;
+    margin-top: 16%;
+    
+}
+
+.caja__texto::placeholder{
+    color: var(--color-2);
+}
+
+.inicioApp__alerta p{
+    color: var(--color-3);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.inicioApp__btn{
+    display: flex;
+    text-align: left;
+    margin-top: 1px;
+}
+
+.inicioApp__btn__encriptar {
+    background-color: var(--color-2);
+    border-radius: 20px;
+    border: 1px solid var(--color-2); /*Todo junto(border color, border width y border style)*/
+    color: var(--color-4);
+    height: 67px;
+    width: 328px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 30px 0px 0px;
+    cursor: pointer;
+  }
+
+  .inicioApp__btn__desencriptar {
+    background-color: #D8DFE8;
+    border-radius: 20px;
+    border-color: var(--color-2); /*Por separado*/
+    border-width: 1px; /*Por separado*/
+    border-style: solid; /*Por separado*/
+    color: var(--color-2);
+    height: 67px;
+    width: 328px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 0px 0px 0px;
+    cursor: pointer;
+  }
+
+.resultadoApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    background-color: var(--color-4);
+    width: 40vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+.caja__respuesta{
+    border: none;
+    outline: none;
+    background-color: var(--color-4);
+    background-image: url("/imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center ;
+    resize: none;
+    width: 90%;
+    height: 70%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: var(--color-3);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mensajeInformativo__1{
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1.2rem;
+    color: var(--color-3);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.mensajeInformativo__2{
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 0.8rem;
+    color: var(--color-3);
+}
+
+.resultadoApp__btn{
+    margin: 0px 10px 20px 10px;
+    text-align: center;
+}
+
+.btnCopiar {
+    background-color: #D8DFE8;
+    border-radius: 20px;
+    border-color: var(--color-2); /*Por separado*/
+    border-width: 1px; /*Por separado*/
+    border-style: solid; /*Por separado*/
+    color: var(--color-2);
+    height: 67px;
+    width: 328px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 24px 0px 0px 0px;
+    cursor: pointer;
+  }
+
+.footer p{
+    font-family: var(--fuente-inter);
+    background-color: var(--color-2);
+    font-size: 1rem;
+    color: var(--color-4);
+    text-align: center;
+    padding: 10px;
+}
+
